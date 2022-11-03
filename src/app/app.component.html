@@ -1,0 +1,33 @@
+<button #btn1 id="btn1" (click)="toggle()" class="someclass">Click Me</button>
+<br />
+<br />
+<input type="text" (blur)="blur()" />
+<br />
+<br />
+<input type="text" (keyup)="keyup()" />
+<br />
+<br />
+<input type="text" (keydown)="keyup()" />
+<br />
+<br />
+<input type="text" (keyup)="keyFunc($event)" />
+<br />
+<br />
+<input
+  type="radio"
+  id="a"
+  name="sample"
+  value="pure"
+  (change)="onChange($event)"
+  checked
+/>
+<label for="a">A</label>
+
+<input
+  type="radio"
+  id="b"
+  name="sample"
+  value="b"
+  (change)="onChange($event)"
+/>
+<label for="b">B</label>
